@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+
+<script src = "https://aframe.io/releases/0.8.2/aframe.min.js"></script> <!-- Referencing our aframe script letting us build our model-->
+<script src = "https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script> <!-- Importing the AR.JS libary letting us render our model in AR!-->
+
+    <head>
+
+<title>AR test!</title>
+
+    </head>
+
+    <body style = "margin: 0px; overflow: hidden;">
+        <h1>Title </h1>
+        <a-scene embedded arjs>
+            <a-marker presets="hiro">
+            <a-box position="0 .5 0" material ="color: red;"> <!--Creates a box-->
+           Text
+            </a-box>
+
+        </a-marker>
+        <a-entity camera></a-entity>
+        </a-scene>
+    </body>
+
+</html>
